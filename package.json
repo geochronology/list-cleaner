@@ -1,0 +1,19 @@
+{
+  "name": "list-cleaner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convert-csv-to-array": "^1.0.3",
+    "csv-parser": "^2.3.3",
+    "csv-writer": "^1.6.0",
+    "get-json": "^1.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
