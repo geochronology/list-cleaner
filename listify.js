@@ -1,35 +1,24 @@
-const { convertCSVToArray } = require('convert-csv-to-array');
-const converter = require('convert-csv-to-array');
 const { processCSV, generateFilteredList } = require('./utils')
+
+// LIST CLEANER v0.1
+// Currently this cleaner works as a two-step process:
+// 1. Convert CSVs to JSON (comment out generateFilteredList)
+// 2. Filter JSON and export to CSV (comment out processCSV)
 
 // specify subs and unsubs CSV files
 const SUB_IMPORT_FILE = './data/list1-sample-subs.csv'
 const UNSUB_IMPORT_FILE = './data/list2-sample-unsubs.csv'
 const SUB_EXPORT_FILE = './data/sub-export.json'
 const UNSUB_EXPORT_FILE = './data/unsub-export.json'
-const ACTIVES_FILE = './data/actives.csv'
+const ACTIVES_FILE = './data/active-subscribers.csv'
 
 
-// initialize arrays
-const totalSubs = []
-const unsubs = []
-const activeSubs = [];
-
+// *** UNCOMMENT TO USE***
 // parse and process csv files
-// processCSV(SUB_IMPORT_FILE, totalSubs, SUB_EXPORT_FILE)
-// processCSV(UNSUB_IMPORT_FILE, unsubs, UNSUB_EXPORT_FILE)
+// processCSV(SUB_IMPORT_FILE, SUB_EXPORT_FILE)
+// processCSV(UNSUB_IMPORT_FILE, UNSUB_EXPORT_FILE)
 
 
-// convert completed
-
-
+// *** UNCOMMENT TO USE***
+// filter and export results
 generateFilteredList(SUB_EXPORT_FILE, UNSUB_EXPORT_FILE, ACTIVES_FILE)
-// generateFilteredList(arr1, arr2, arr3)
-// console.log(arr3)
-
-// doTheThing()
-// convert the CSVs into object arrays
-// create a filtered contact list
-
-// console.log(activeSubs)
-
